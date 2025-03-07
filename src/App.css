@@ -424,3 +424,331 @@ body {
     width: 100%;
   }
 }
+
+/* Additional styles for the enhanced admin portal features */
+
+/* Token Column Styling */
+.token-column {
+  text-align: center;
+}
+
+.token-badge {
+  background-color: #6200ea;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.9em;
+  display: inline-block;
+}
+
+/* File Preview Button and Container */
+.file-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.file-name {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+}
+
+.preview-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #6200ea;
+  padding: 0;
+  margin: 0;
+  transition: transform 0.2s ease;
+}
+
+.preview-button:hover {
+  transform: scale(1.2);
+}
+
+/* Preview Modal */
+.preview-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.preview-content {
+  background-color: white;
+  width: 80%;
+  max-width: 900px;
+  height: 80vh;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.preview-header {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.preview-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.close-preview {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+}
+
+.preview-body {
+  flex: 1;
+  overflow: auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pdf-preview, .image-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border: none;
+}
+
+.generic-preview {
+  padding: 32px;
+  text-align: center;
+}
+
+.download-link {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 8px 16px;
+  background-color: #6200ea;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.download-link:hover {
+  background-color: #5000d2;
+}
+
+/* Dark Theme Adjustments */
+.dark-theme .preview-content {
+  background-color: #333;
+  color: white;
+}
+
+.dark-theme .preview-header {
+  border-bottom: 1px solid #444;
+}
+
+.dark-theme .preview-header h3 {
+  color: white;
+}
+
+.dark-theme .close-preview {
+  color: #aaa;
+}
+
+.dark-theme .generic-preview {
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .preview-content {
+    width: 95%;
+    height: 90vh;
+  }
+  
+  .token-badge {
+    font-size: 0.8em;
+    padding: 3px 6px;
+  }
+}
+
+/* Clear search button */
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.clear-search {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Comments cell styling */
+.comments-cell {
+  max-width: 250px;
+}
+
+.comments-container {
+  position: relative;
+}
+
+.comments-toggle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  color: #6200ea;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 5px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  transition: background-color 0.2s;
+}
+
+.comments-toggle:hover {
+  background-color: rgba(98, 0, 234, 0.1);
+}
+
+.comments-icon {
+  font-size: 16px;
+}
+
+.comments-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  background-color: white;
+  border-radius: 8px;
+  padding: 12px;
+  min-width: 200px;
+  max-width: 300px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  white-space: normal;
+  word-wrap: break-word;
+  margin-top: 8px;
+  line-height: 1.5;
+  color: #333;
+  font-size: 14px;
+  border: 1px solid #e6e6e6;
+}
+
+.comments-content::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 15px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid white;
+}
+
+.no-comments {
+  color: #999;
+  font-style: italic;
+  font-size: 12px;
+}
+
+/* Student cell styling */
+.student-cell {
+  min-width: 150px;
+}
+
+.student-name {
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.student-email {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Timestamp cell styling */
+.time-cell {
+  min-width: 100px;
+}
+
+.timestamp {
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.datestamp {
+  font-size: 12px;
+  color: #666;
+}
+
+/* File meta information */
+.file-meta {
+  font-size: 11px;
+  color: #666;
+  margin-top: 4px;
+  display: flex;
+  gap: 8px;
+}
+
+.file-meta span {
+  background-color: #f1f5f9;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* Empty table styling */
+.empty-table {
+  text-align: center;
+  padding: 40px 0 !important;
+}
+
+.empty-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #888;
+}
+
+.empty-message span {
+  font-size: 32px;
+}
+
+.empty-message p {
+  font-size: 16px;
+}
+
+/* Highlight search results */
+.highlight {
+  background-color: rgba(98, 0, 234, 0.15);
+  padding: 0 2px;
+  border-radius: 2px;
+}
