@@ -26,9 +26,9 @@ The ReproX Admin Panel plays a crucial role in ensuring smooth operations at the
 This project showcases my expertise in full-stack development, problem-solving, and creating solutions that improve daily workflows. 🚀
 ## Screenshots
 
-![App Screenshot](https://github.com/user-attachments/assets/95a14e8e-2dc3-4ed1-b506-cc56efd3c2e4)
+![App Screenshot](https://github.com/user-attachments/assets/06725606-2434-498a-bee2-599ee5ca7c9f)
 
 
-![App Screenshot](https://github.com/user-attachments/assets/44b5044d-524f-4eda-af86-1aef8a1626e4)
+![App Screenshot](https://github.com/user-attachments/assets/d3a78fed-e168-4997-88e9-c5d0fa12c026)
 
 
