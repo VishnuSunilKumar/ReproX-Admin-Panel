@@ -21,7 +21,7 @@ Frontend: React
 
 Backend: Firebase
 
-The ReproX Admin Panel plays a crucial role in ensuring smooth operations at the college Xerox center, minimizing delays and enhancing efficiency. The admin panel is linked to the ReproX Mobile Application where the user requests for print . The GitHub link to the ReproX Mobile App : https://github.com/VishnuSunilKumar/ReproX-Mobile-App
+The ReproX Admin Panel plays a crucial role in ensuring smooth operations at the college Xerox center, minimizing delays and enhancing efficiency. The admin panel is linked to the ReproX Mobile Application where the user requests for print . The GitHub link to the ReproX Mobile App : [ ReproX MOBILE APP ](https://github.com/VishnuSunilKumar/ReproX-Mobile-App)
 
 This project showcases my expertise in full-stack development, problem-solving, and creating solutions that improve daily workflows. 🚀
 ## Screenshots
